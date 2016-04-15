@@ -143,8 +143,7 @@ input[type=button] {width: auto; overflow: visible;}
 .clearfix { zoom: 1; }
 @font-face {
 	font-family: "Flaticon";
-	src: url("/fonts/flaticon.eot");
-	src: url("/fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	src:
 	url("/fonts/flaticon.woff") format("woff"),
 	url("/fonts/flaticon.ttf") format("truetype"),
 	url("/fonts/flaticon.svg") format("svg");
@@ -155,7 +154,7 @@ input[type=button] {width: auto; overflow: visible;}
 
 .flaticon-keyboard53:before {
 	content: "\e000";
-	font-family: Flaticon;
+	font-family: "Flaticon";
 	font-style: normal;
 }
 
