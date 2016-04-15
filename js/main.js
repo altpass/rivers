@@ -11,7 +11,7 @@ $(document).ready(function(){
 });
 
 function initMap() {
-		//берем элемент по айди и создаём там карту
+	
 		var map = new google.maps.Map(document.getElementById('map'), {
 			center: {lat: 50.5548306, lng: 30.7812118},
 			zoom: 7,
@@ -63,9 +63,9 @@ function initMap() {
 		
 		$.getScript("data/rivers.js", function (){	
 			
-			for (i in rivers){ //начинаем ставить маркерв. перебираем свойства в объекте rivers
+			for (i in rivers){
 				if (rivers.hasOwnProperty(i)){
-					var marker = new google.maps.Marker({ //создаём маркеры
+					var marker = new google.maps.Marker({ 
 						position:{
 							lat: rivers[i].lat,
 							lng: rivers[i].lng
@@ -88,10 +88,7 @@ function initMap() {
 					    strokeOpacity: .8,
 					    strokeWeight: 5
 					  });					
-						
-					// google.maps.event.addListener(marker, 'click', function() {
-					// 	infowindow.open(map,marker);
-					// });
+
 										
 					var riverMenuLink = document.getElementById(i).parentNode;
 
