@@ -3,10 +3,10 @@ $(document).ready(function(){
 
 		if ($("#accordion-in").is(":hidden")){
 			$( "#accordion-in" ).show( "fast" );
-			$("#arrow").css("transform", "rotate(90deg)");
+			$("#arrow").css("transform", "rotate(90deg)").css("color", "#4d4d4d");
 		}else {
 			$( "#accordion-in").slideUp("fast");
-			$("#arrow").css("transform", "none");}
+			$("#arrow").css("transform", "none").css("color", "#00adee");}
 	})	
 });
 
